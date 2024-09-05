@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition App</title>
+</head>
+<body>
+    <h1>Simple Addition App</h1>
+    
+    <label for="num1">Number 1:</label>
+    <input type="number" id="num1">
+    
+    <label for="num2">Number 2:</label>
+    <input type="number" id="num2">
+    
+    <button onclick="addNumbers()">Add</button>
+    
+    <p id="result">Result: </p>
+
+    <script>
+        function addNumbers() {
+            var num1 = parseInt(document.getElementById('num1').value);
+            var num2 = parseInt(document.getElementById('num2').value);
+            var result = num1 + num2;
+            document.getElementById('result').innerText = "Result: " + result;
+        }
+    </script>
+</body>
+</html>
