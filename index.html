@@ -17,7 +17,7 @@
     <input type="number" id="num2">
     
     <button onclick="addNumbers()">Add</button>
-    
+    <button onclick="subtractNumbers()">Subtract</button>
     <p id="result">Result: </p>
 
     <script>
@@ -34,6 +34,11 @@
     function addNumbers() {
         var numbers = getNumbers();
         var result = numbers.num1 + numbers.num2;
+        displayResult(result);
+    }
+    function subtractNumbers() {
+        var numbers = getNumbers();
+        var result = numbers.num1 - numbers.num2;
         displayResult(result);
     }
     </script>
